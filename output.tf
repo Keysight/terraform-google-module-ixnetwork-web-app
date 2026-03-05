@@ -22,6 +22,7 @@ output "Instance" {
 		"can_ip_forward" : google_compute_instance.Instance.can_ip_forward
 		"cpu_platform" : google_compute_instance.Instance.cpu_platform
 		"current_status" : google_compute_instance.Instance.current_status
+		"disk_size_gb" : google_compute_instance.Instance.boot_disk.0.initialize_params.0.size
 		"instance_id" : google_compute_instance.Instance.instance_id
 		"machine_type" : google_compute_instance.Instance.machine_type
 		"name" : google_compute_instance.Instance.name
